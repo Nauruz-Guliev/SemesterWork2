@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'RUBIK';
+    src: url('font/RUBIK.ttf');
+}
+
+.root {
+    -fx-font-family: 'RUBIK';
+}
+
+#Button {
+    --fxbackground-color: black;
+}
+
+.btn-main {
+    -fx-font-size: 1.2em;
+    -fx-background-color: #972850;
+    -fx-padding: 10px;
+    -fx-min-width: 200px;
+    -fx-border-radius: 4px;
+    -fx-text-fill: white;
+    -fx-background-radius: 4px;
+    -fx-border-color: black;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 1, 1, 1);
+}
+
+.btn-main:hover {
+    -fx-cursor: hand;
+    -fx-text-fill: #AF9BB6;
+    -fx-background-color: #6D1D3A;
+    -fx-effect: dropshadow(gaussian, rgba(0.1, 0.1, 0.1, 0.1), 1, 1, 1, 1);
+}
+
+
+.nav-btn {
+    -fx-font-size: 1.3em;
+    -fx-min-width: 180px;
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+    -fx-border-radius: 4px;
+    -fx-border-color: black;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 1, 1, 1);
+}
+
+.nav-btn:hover {
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0.1, 0.1), 1, 1, 1, 1);
+}
+
+
+.mainScene {
+    --fxbackground-color: #AF9BB6;
+}
+
+.box-right-menu {
+    -fx-min-width: 200px;
+    -fx-min-height: 100%;
+    -fx-background-color: #AF9BB6;
+    -fx-border-radius: 1px;
+    -fx-border-color: #191716;
+    -fx-border-insets: 5;
+    -fx-border-width: 1;
+}
+
+.text-field-main {
+    -fx-min-width: 180px;
+    -fx-min-height: 40px;
+    -fx-background-radius: 18px;
+    -fx-border-color: #AF9BB6;
+    -fx-border-radius: 18px;
+}
+
+.btn-main-navigation {
+    -fx-min-width: 300px;
+    -fx-font-size: 1.5em;
+    -fx-min-height: 64px;
+    -fx-background-radius: 18px;
+    -fx-border-color: #440D0F;
+    -fx-border-radius: 18px;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-background-color: #6D1D3A;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 1, 1, 1);
+}
+
+.btn-main-navigation:hover {
+    -fx-cursor: hand;
+    -fx-text-fill: #AF9BB6;
+    -fx-background-color: #832d4b;
+    -fx-effect: dropshadow(gaussian, rgba(0.1, 0.1, 0.1, 0.1), 0, 0, 0, 0);
+}
+
+
+.secondary-label {
+    -fx-min-height: 40px;
+    -fx-min-width: 120px;
+    -fx-font-size: 1.1em;
+    -fx-wrap-text: true;
+}
+
+.spinner {
+    -fx-start-margin: 10px;
+    -fx-end-margin: 10px;
+    -fx-min-height: 40px;
+    -fx-max-width: 80px;
+}
+
+.color-picker {
+    -fx-min-height: 40px;
+    -fx-max-width: 80px;
+    -fx-end-margin: 10px;
+    -fx-start-margin: 10px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 1, 1, 1);
+}
+
+.toggle {
+    -fx-min-height: 40px;
+    -fx-min-width: 200px;
+}
+
+
+.btn-city {
+
+    -fx-background-radius: 30px;
+    -fx-min-width: 60px;
+    -fx-font-size: 1.4em;
+    -fx-font-weight: bold;
+    -fx-min-height: 60px;
+    -fx-max-width: 60px;
+    -fx-max-height: 60px;
+    -fx-border-radius: 30px;
+    -fx-cursor: hand;
+    -fx-text-fill: black;
+    -fx-border-width: 0px;
+    -fx-border-color: green;
+
+    -fx-effect: dropshadow(gaussian, rgba(0.0, 0.0, 0.5, 0.5), 0, 0, 0, 0);
+}
+
+
+.label-main {
+    -fx-alignment: center;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-max-width: 500px;
+    -fx-wrap-text: true
+}
+
+.hBox {
+}
+
+.secondary-label {
+    -fx-min-height: 40px;
+    -fx-min-width: 120px;
+}

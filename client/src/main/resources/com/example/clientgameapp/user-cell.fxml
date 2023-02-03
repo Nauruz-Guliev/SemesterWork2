@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml">
+    <left>
+        <Label fx:id="labelUserId"/>
+    </left>
+
+    <center>
+        <Label fx:id="labelUserName"/>
+    </center>
+    <right>
+        <HBox>
+            <Label fx:id="labelStatus" />
+            <Label fx:id="labelColor" minHeight="20" minWidth="20"/>
+        </HBox>
+    </right>
+</BorderPane>

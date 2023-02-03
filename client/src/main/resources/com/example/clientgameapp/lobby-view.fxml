@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<BorderPane
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.example.clientgameapp.controllers.lobby.LobbyController"
+        prefHeight="600.0" prefWidth="600.0">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+
+    <stylesheets>
+        <URL value="@styles/main.css"/>
+    </stylesheets>
+
+
+    <right>
+        <VBox spacing="10" styleClass="box-right-menu">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <Button styleClass="nav-btn" mnemonicParsing="false" text="Ready" onAction="#setReadyStatus"/>
+
+            <Button styleClass="nav-btn" mnemonicParsing="false" text="Start game" onAction="#startGame"/>
+
+            <Button styleClass="nav-btn" mnemonicParsing="false" text="Leave lobby" onAction="#leaveLobby"/>
+
+            <Button styleClass="nav-btn" mnemonicParsing="false" text="Update Lobby" onAction="#updateLobby"/>
+
+            <HBox>
+                <ColorPicker styleClass="color-picker" fx:id="gameColorPicker" onAction="#changeColor"/>
+            </HBox>
+        </VBox>
+    </right>
+
+
+    <center>
+        <ListView fx:id="usersList"/>
+    </center>
+
+    <bottom>
+    </bottom>
+</BorderPane>
+

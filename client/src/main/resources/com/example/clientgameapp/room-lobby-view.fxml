@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<?import com.example.clientgameapp.controllers.listViewItems.RoomCellFactory?>
+<BorderPane
+        minHeight="600" prefWidth="600"
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.example.clientgameapp.controllers.lobby.RoomLobbyController"
+>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+
+    <stylesheets>
+        <URL value="@styles/main.css"/>
+    </stylesheets>
+
+    <right>
+        <VBox styleClass="box-right-menu" spacing="10">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <Button styleClass="nav-btn" text="Create room" onAction="#navigateRoomCreation"/>
+            <Button styleClass="nav-btn" text="Find room" onAction="#navigateRoomList"/>
+        </VBox>
+    </right>
+    <center>
+        <VBox>
+            <Label styleClass="secondary-label" text="Choose room"/>
+            <ListView fx:id="roomsList"/>
+            <BorderPane>
+                <left>
+                    <Button styleClass="btn-main" text="Connect" onAction="#connectToRoom"/>
+                </left>
+                <right>
+                    <ColorPicker fx:id="gameColorPicker" onAction="#getColor" styleClass="color-picker"/>
+                </right>
+            </BorderPane>
+        </VBox>
+    </center>
+
+</BorderPane>

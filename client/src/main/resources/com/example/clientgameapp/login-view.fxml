@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane
+        stylesheets="@styles/main.css"
+        prefWidth="600" prefHeight="600"
+        xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.example.clientgameapp.controllers.user.Login">
+
+    <stylesheets>
+        <URL value="@styles/main.css"/>
+    </stylesheets>
+
+    <right>
+        <VBox spacing="10" styleClass="box-right-menu">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <Button styleClass="nav-btn" mnemonicParsing="false" text="Register"
+                    onAction="#navigateRegistration"/>
+        </VBox>
+    </right>
+
+    <center>
+        <FlowPane vgap="10" hgap="10" alignment="CENTER" orientation="VERTICAL">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+
+            <Label styleClass="label-main" text="Login"/>
+            <TextField styleClass="text-field-main" fx:id="textFieldEmail" promptText="Email"/>
+            <PasswordField styleClass="text-field-main" fx:id="textFieldPassword" promptText="Password"/>
+            <Button styleClass="btn-main" mnemonicParsing="false" prefHeight="26.0" prefWidth="152.0" text="Login" onAction="#loginUser"/>
+
+        </FlowPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.*?>
+
+<?import java.net.URL?>
+<BorderPane
+        prefHeight="600.0" prefWidth="600.0"
+        xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.example.clientgameapp.controllers.lobby.RoomCreationController">
+
+    <stylesheets>
+        <URL value="@styles/main.css"/>
+    </stylesheets>
+
+    <right>
+        <VBox spacing="10" styleClass="box-right-menu">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <Button styleClass="nav-btn" text="Profile" onAction="#navigateProfile" prefWidth="100"/>
+            <Button styleClass="nav-btn" text="Find room" onAction="#navigateRoomList" prefWidth="100"/>
+        </VBox>
+    </right>
+    <center>
+        <FlowPane hgap="10" vgap="10" orientation="VERTICAL" alignment="CENTER">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+
+            <HBox alignment="CENTER_LEFT" styleClass="hBox">
+                <Label text="Choose your color" styleClass="secondary-label"/>
+                <ColorPicker fx:id="gameColorPicker" onAction="#getColor" styleClass="color-picker"/>
+            </HBox>
+
+            <!--
+            <Slider fx:id="sliderPlayerCount" blockIncrement="1" majorTickUnit="1" max="4" min="2" minorTickCount="1"
+                    showTickLabels="true" showTickMarks="true"/> !-->
+
+            <ToggleSwitch fx:id="togglePrivate" text="Private" styleClass="toggle"/>
+            <!--
+            <HBox alignment="BASELINE_LEFT" styleClass="hBox">
+                <Label text="Cities amount" styleClass="secondary-label"/>
+                <Spinner fx:id="spinnerCitiesAmount" styleClass="spinner" editable="false">
+                    <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory min="6" max="10"/>
+                    </valueFactory>
+                </Spinner>
+            </HBox>
+            !-->
+            <HBox alignment="BASELINE_LEFT" styleClass="hBox">
+                <Label text="Army speed" styleClass="secondary-label"/>
+                <Spinner fx:id="spinnerArmySpeed" styleClass="spinner">
+                    <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory min="20" max="50"/>
+                    </valueFactory>
+                </Spinner>
+            </HBox>
+            <HBox alignment="BASELINE_LEFT" styleClass="hBox">
+                <Label text="Army growth rate" styleClass="secondary-label"/>
+                <Spinner fx:id="spinnerArmyGrowthRate" styleClass="spinner">
+                    <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory min="1" max="10"/>
+                    </valueFactory>
+                </Spinner>
+            </HBox>
+
+
+            <Button styleClass="btn-main" minWidth="300" mnemonicParsing="false" onAction="#createRoom"
+                    text="Create room"/>
+        </FlowPane>
+    </center>
+</BorderPane>
