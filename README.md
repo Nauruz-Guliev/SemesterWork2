@@ -1,4 +1,4 @@
-# City Capturing Strategy Game
+# :star: City Capturing Strategy Game
 
 A very simple multiplayer strategy game made with **Java FX** and **Java Sockets**.
 The purpose of this game is to capture all the cities before your enemy does it. 
@@ -10,13 +10,13 @@ Additionally, this game utilizes **cutsom protocol** which translates the bytes 
    <img src="../main/images/game.gif" width="500"/>
 </p>
 
-## Game Flow
+## :video_game: Game Flow
 
 <p align="center">
    <img src="../main/images/gameflow.png" width="500"/>
 </p>
 
-## Used technologies
+## 🛠  Used technologies
 
 ##### **Server**
 * Java Sockets
